@@ -1,129 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб-Студия</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./сss/normalize.css" />
     <link rel="stylesheet" href="./сss/styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Шапка сайта -->
     <header class="page-header">
+      <div class="container flexbox">
         <nav class="navigation">
-            <a href="./index.html" class="logo"><span class="logo-blue">Web</span> Studio
-            </a>
-            <ul class="list menu-list">
-                <li class="menu-item"><a href="./index.html" class="menu-link">Студия</a></li>
-                <li class="menu-item"><a href="./portfolio.html" class="link current menu-link">Портфолио</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
-            </ul>
+          <a href="./index.html" class="logo"
+            ><span class="logo-blue">Web</span> Studio
+          </a>
+          <ul class="list menu-list">
+            <li class="menu-item">
+              <a href="./index.html" class="menu-link">Студия</a>
+            </li>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="link current menu-link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
+          </ul>
         </nav>
 
         <address>
-            <ul class="list address-list">
-                <li><img src="./images/envelope.svg" class="address-item" alt="" width="16"><a
-                        href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a></li>
-                <li><img src="./images/smartphone.svg" class="address-item" alt="" width="10"><a
-                        href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
-            </ul>
+          <ul class="list address-list">
+            <li>
+              <img
+                src="./images/envelope.svg"
+                class="address-item"
+                alt=""
+                width="16"
+              /><a href="mailto:info@devstudio.com" class="address-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <img
+                src="./images/smartphone.svg"
+                class="address-item"
+                alt=""
+                width="10"
+              /><a href="tel:+380961111111" class="address-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </address>
+      </div>
     </header>
 
     <!-- Портфель продуктов -->
     <main>
-        <section class="product-list">
-            <h1 class="page-title" hidden>Портфолио</h1>
-            <ul class="product-filter list">
-            <li><button class="filter-button">Все</button>
-            </li>
-             <li><button class="filter-button">Веб-сайты</button>
-            </li>
-             <li><button class="filter-button">Приложения</button>
-            </li>
-            <li><button class="filter-button">Дизайн</button>
-            </li>
-            <li><button class="filter-button">Маркетинг</button>
+      <section class="product-list">
+        <div class="container">
+          <h1 class="page-title" hidden>Портфолио</h1>
+          <ul class="product-filter list">
+            <li><button class="filter-button">Все</button></li>
+            <li><button class="filter-button">Веб-сайты</button></li>
+            <li><button class="filter-button">Приложения</button></li>
+            <li><button class="filter-button">Дизайн</button></li>
+            <li><button class="filter-button">Маркетинг</button></li>
+          </ul>
+          <ul class="list">
+            <li>
+              <a href="" class="product"
+                ><img src="./images/tekhnokryak.jpg" alt="Текст" width="370" />
+                <p class="product-description">
+                  Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.
+                </p>
+                <h2 class="product-item">Технокряк</h2>
+                <p class="product-category">Веб-сайт</p>
+              </a>
             </li>
 
-            </ul>
-         <ul class="list">
-            <li><a href="" class="product"><img src="./images/tekhnokryak.jpg" alt="Текст" width="370">
-            <p class="product-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-            шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="product-item">Технокряк</h2>
-            <p class="product-category">Веб-сайт</p>
-            </a></li>  
+            <li>
+              <a href="" class="product"
+                ><img
+                  src="./images/golden-star.jpg"
+                  alt="Баскетболисты"
+                  width="370"
+                />
+                <h2 class="product-item">Постер Orlean vs Golden Star</h2>
+                <p class="product-category">Дизайн</p>
+              </a>
+            </li>
 
-            <li><a href="" class="product"><img src="./images/golden-star.jpg" alt="Баскетболисты" width="370">
-            <h2 class="product-item">Постер Orlean vs Golden Star</h2>
-            <p class="product-category">Дизайн</p>
-            </a></li>
-
-            <li><a href="" class="product"><img src="./images/seafood.jpg" alt="Логотип ресторана Сифуд" width="370">
-            <h2 class="product-item">Ресторан Seafood</h2>
-                    <p class="product-category">Приложение</p>
-                </a></li>
-            <li><a href="" class="product"><img src="./images/earphones.jpg" alt="Наушники" width="370">
-            <h2 class="product-item">Проект Prime</h2>
-            <p class="product-category">Маркетинг</p>
-            </a></li>
-            <li><a href="" class="product"><img src="./images/boxes.jpg" alt="Коробки" width="370">
-                    <h2 class="product-item">Проект Boxes</h2>
-                    <p class="product-category">Приложение</p>
-                </a></li>
-            <li><a href="" class="product"><img src="./images/golden-star.jpg" alt="Монитор" width="370">
-                    <h2 class="product-item">Inspiration has no Borders</h2>
-                    <p class="product-category">Веб-сайт</p>
-                </a></li>
-            <li><a href="" class="product"><img src="./images/limited-edition.jpg" alt="Книга" width="370">
-                    <h2 class="product-item">Издание Limited Edition</h2>
-                    <p class="product-category">Дизайн</p>
-                </a></li>
-            <li><a href="" class="product"><img src="./images/lab.jpg" alt="Лейбл" width="370">
-                    <h2 class="product-item">Проект LAB</h2>
-                    <p class="product-category">Маркетинг</p>
-                </a></li>
-            <li><a href="" class="product"><img src="./images/growing-business.jpg" alt="Ноутбук с открытым приложением" width="370">
-                    <h2 class="product-item">Growing Business</h2>
-                    <p class="product-category">Приложение</p>
-                </a></li>
-            
-         </ul>   
-
-        </section>
-
+            <li>
+              <a href="" class="product"
+                ><img
+                  src="./images/seafood.jpg"
+                  alt="Логотип ресторана Сифуд"
+                  width="370"
+                />
+                <h2 class="product-item">Ресторан Seafood</h2>
+                <p class="product-category">Приложение</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="product"
+                ><img src="./images/earphones.jpg" alt="Наушники" width="370" />
+                <h2 class="product-item">Проект Prime</h2>
+                <p class="product-category">Маркетинг</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="product"
+                ><img src="./images/boxes.jpg" alt="Коробки" width="370" />
+                <h2 class="product-item">Проект Boxes</h2>
+                <p class="product-category">Приложение</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="product"
+                ><img
+                  src="./images/golden-star.jpg"
+                  alt="Монитор"
+                  width="370"
+                />
+                <h2 class="product-item">Inspiration has no Borders</h2>
+                <p class="product-category">Веб-сайт</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="product"
+                ><img
+                  src="./images/limited-edition.jpg"
+                  alt="Книга"
+                  width="370"
+                />
+                <h2 class="product-item">Издание Limited Edition</h2>
+                <p class="product-category">Дизайн</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="product"
+                ><img src="./images/lab.jpg" alt="Лейбл" width="370" />
+                <h2 class="product-item">Проект LAB</h2>
+                <p class="product-category">Маркетинг</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="product"
+                ><img
+                  src="./images/growing-business.jpg"
+                  alt="Ноутбук с открытым приложением"
+                  width="370"
+                />
+                <h2 class="product-item">Growing Business</h2>
+                <p class="product-category">Приложение</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-<!-- Футер -->
-<footer class="footer">
-    <div>
-        <a href="./index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-white">
-                Studio</span></a>
+    <!-- Футер -->
+    <footer class="footer">
+      <div>
+        <a href="./index.html" class="logo"
+          ><span class="logo-blue">Web</span
+          ><span class="logo-white"> Studio</span></a
+        >
         <address class="address">
-            г. Киев, пр-т Леси Украинки, 26
-            <ul class="list contacts">
-                <li class="contacts-item"><a href="mailto:info@devstudio.com"
-                        class="contacts-link">info@devstudio.com</a></li>
-                <li class="contacts-item"><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
-            </ul>
+          г. Киев, пр-т Леси Украинки, 26
+          <ul class="list contacts">
+            <li class="contacts-item">
+              <a href="mailto:info@devstudio.com" class="contacts-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a href="tel:+380961111111" class="contacts-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </address>
-    </div>
-    <div class="actions">
+      </div>
+      <div class="actions">
         <b>Присоединяйтесь</b>
         <ul class="list">
-            <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-            <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-            <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-            <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+          <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
+          <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
+          <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
+          <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
         </ul>
-    </div>
-    <div class="actions"><b>Подпишитесь на рассылку</b></div>
-    <button class="actions-btn">Подписаться</button>
-</footer>
-        
-</body>
+      </div>
+      <div class="actions"><b>Подпишитесь на рассылку</b></div>
+      <button class="actions-btn">Подписаться</button>
+    </footer>
+  </body>
 </html>
