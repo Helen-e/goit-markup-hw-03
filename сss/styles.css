@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid blueviolet;
+  /* outline: 2px solid blueviolet; */
 }
 
 :root {
@@ -27,7 +27,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin: 0;
-  display: block;
+  /* display: block; */
 }
 
 .box {
@@ -195,16 +195,39 @@ display: inline;
 
 /* <!-- Преимущества --> */
 
-.block {
+.pluses {
   margin-bottom: 94px;
+}
+  
+.pluses-list{
+  display: flex;
   /* background: green */
+}
+
+.pluses li {
+width: 270px;
+text-align: left;
+}
+
+.pluses li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .pluses-list > li { */
+  /* text-align: center; */
+}
+
+/* .pluses-icon {
+  margin-right: auto;
+  margin-left: auto; */
+  /* text-align: center; */
 }
 
 .container {
   width: 1170px; 
   margin-left: 15px;
   margin-right: 15px;
-  background-color: yellow;
+  background-color: greenyellow;
   /* outline: 5px solid color: maroon; */
 }
 
@@ -225,6 +248,7 @@ display: inline;
   color: var(--title-text-color);
 }
 
+/* <!-- Портфель продуктов --> */
 .products-title {
   font-weight: bold;
   font-size: 14px;
@@ -236,12 +260,32 @@ display: inline;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* <!-- Портфель продуктов --> */
+.products-list {
+  display: flex;}
+
+  .products-item:not(:last-child) {
+  margin-right:30px;
+/* align-items: center; */
+}
 
 .products-title:hover,
 .products-title:focus {
   color: var(--accent-color);
 }
+
+ /* <!-- Команда --> */
+
+ .team-list, .social-net {
+   display: flex;
+ }
+
+/* .team-member {
+   display: flex; */
+}
+/* .team-member-photo {
+  /* text-align: center; */
+  display: flex; 
+} */
 
 .team-member-name {
   font-weight: 500;
@@ -342,4 +386,8 @@ p.product-category {
 
 .navigation .link.current {
   color: var(--accent-color);
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }
