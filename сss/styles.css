@@ -33,6 +33,8 @@ body {
 .box {
   /* align-items: center; */
   text-align: center;
+  outline: 5px solid maroon;
+  /* background: indianred; */
 }
 
 /* <!-- Шапка сайта --> */
@@ -195,9 +197,21 @@ display: inline;
 
 /* <!-- Преимущества --> */
 
-.pluses {
-  margin-bottom: 94px;
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
+
+/* .pluses {
+  margin-bottom: 94px;
+} */
   
 .pluses-list{
   display: flex;
@@ -215,20 +229,19 @@ text-align: left;
 
 /* .pluses-list > li { */
   /* text-align: center; */
-}
+
 
 /* .pluses-icon {
   margin-right: auto;
   margin-left: auto; */
   /* text-align: center; */
-}
 
 .container {
   width: 1170px; 
   margin-left: 15px;
   margin-right: 15px;
-  background-color: greenyellow;
-  /* outline: 5px solid color: maroon; */
+  margin-bottom: 94px ;
+  outline: 5px solid maroon; 
 }
 
 .section-title {
@@ -280,12 +293,12 @@ text-align: left;
  }
 
 /* .team-member {
-   display: flex; */
-}
+   display: flex;} */
+
 /* .team-member-photo {
-  /* text-align: center; */
-  display: flex; 
-} */
+  /* text-align: center;
+  display: flex;} 
+*/
 
 .team-member-name {
   font-weight: 500;
