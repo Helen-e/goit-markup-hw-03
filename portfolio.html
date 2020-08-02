@@ -62,7 +62,7 @@
     <!-- Портфель продуктов -->
     <main>
       <section class="product-list">
-        <div class="container">
+        <div class="container product-container">
           <h1 class="page-title" hidden>Портфолио</h1>
           <ul class="product-filter list">
             <li><button class="filter-button">Все</button></li>
@@ -71,17 +71,16 @@
             <li><button class="filter-button">Дизайн</button></li>
             <li><button class="filter-button">Маркетинг</button></li>
           </ul>
-          <ul class="list">
+          <ul class="list product-item-list">
             <li>
               <a href="" class="product"
-                ><img src="./images/tekhnokryak.jpg" alt="Текст" width="370" />
-                <p class="product-description">
-                  Технокряк это современная площадка распространения
-                  коронавируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.
-                </p>
+                >
+                <div class="product-image"><img src="./images/tekhnokryak.jpg" alt="Текст" width="370" />
+                </div>
+                <div class="product-border">
                 <h2 class="product-item">Технокряк</h2>
                 <p class="product-category">Веб-сайт</p>
+                </div>
               </a>
             </li>
 
@@ -92,8 +91,10 @@
                   alt="Баскетболисты"
                   width="370"
                 />
+                <div class="product-border">
                 <h2 class="product-item">Постер Orlean vs Golden Star</h2>
                 <p class="product-category">Дизайн</p>
+                </div>                
               </a>
             </li>
 
@@ -103,23 +104,28 @@
                   src="./images/seafood.jpg"
                   alt="Логотип ресторана Сифуд"
                   width="370"
-                />
+                /><div class="product-border">
                 <h2 class="product-item">Ресторан Seafood</h2>
                 <p class="product-category">Приложение</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="product"
                 ><img src="./images/earphones.jpg" alt="Наушники" width="370" />
+                <div class="product-border">
                 <h2 class="product-item">Проект Prime</h2>
                 <p class="product-category">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="product"
                 ><img src="./images/boxes.jpg" alt="Коробки" width="370" />
+                <div class="product-border">
                 <h2 class="product-item">Проект Boxes</h2>
                 <p class="product-category">Приложение</p>
+                </div>
               </a>
             </li>
             <li>
@@ -129,8 +135,10 @@
                   alt="Монитор"
                   width="370"
                 />
+                <div class="product-border">
                 <h2 class="product-item">Inspiration has no Borders</h2>
                 <p class="product-category">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li>
@@ -140,15 +148,19 @@
                   alt="Книга"
                   width="370"
                 />
+                <div class="product-border">
                 <h2 class="product-item">Издание Limited Edition</h2>
                 <p class="product-category">Дизайн</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="product"
                 ><img src="./images/lab.jpg" alt="Лейбл" width="370" />
+                <div class="product-border">
                 <h2 class="product-item">Проект LAB</h2>
                 <p class="product-category">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li>
@@ -158,8 +170,10 @@
                   alt="Ноутбук с открытым приложением"
                   width="370"
                 />
+                <div class="product-border">
                 <h2 class="product-item">Growing Business</h2>
                 <p class="product-category">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -168,38 +182,33 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
-      <div>
-        <a href="./index.html" class="logo"
-          ><span class="logo-blue">Web</span
-          ><span class="logo-white"> Studio</span></a
-        >
+    <footer class="footer container">
+      <div class="address-info">
+        <a href="./index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-white"> Studio</span></a>
         <address class="address">
           г. Киев, пр-т Леси Украинки, 26
           <ul class="list contacts">
             <li class="contacts-item">
-              <a href="mailto:info@devstudio.com" class="contacts-link"
-                >info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
             </li>
             <li class="contacts-item">
-              <a href="tel:+380961111111" class="contacts-link"
-                >+38 096 111 11 11</a
-              >
+              <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
-      <div class="actions">
-        <b>Присоединяйтесь</b>
-        <ul class="list">
+      <div class="actions join">
+        <h3 class="actions action-join">Присоединяйтесь</h3>
+        <ul class="list social-icons">
           <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
           <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
           <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
           <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
         </ul>
       </div>
-      <div class="actions"><b>Подпишитесь на рассылку</b></div>
+      <div class="actions">
+        <h3 class="actions subscribe">Подпишитесь на рассылку</h3>
+      </div>
       <button class="actions-btn">Подписаться</button>
     </footer>
   </body>
