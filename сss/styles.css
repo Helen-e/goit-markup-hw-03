@@ -64,7 +64,6 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .address-item {
@@ -80,9 +79,9 @@ display: inline;
 /* margin: auto; */
 }
 
-.address-list-item:not(:last-child) {
+/* .address-list-item:not(:last-child) {
   margin-right: 30px;
-} 
+}  */
 
 .address-link,
 .address-item {
@@ -97,7 +96,7 @@ display: inline;
 
 /* <!-- Герой --> */
 .hero {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: purple;
@@ -122,7 +121,6 @@ display: inline;
   text-transform: uppercase;
   color: var(--white-text-color);
   background-color: lightslategray;
-  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -139,7 +137,7 @@ display: inline;
 .flexbox {
   display: flex;
   justify-content: flex-end;
-  align-items: center; /*проверить, почему не работает*/
+  /* align-items: center;  */
 }
 .logo-blue {
   color: var(--accent-color);
@@ -190,7 +188,9 @@ display: inline;
   border-radius: 4px;
   border-color: transparent;
   width: 200px;
-  height: 50px;
+  height: 50px;}
+
+  .subscribe-btn {
   margin-top: 108px;
 }
 
@@ -230,19 +230,31 @@ text-align: left;
   /* text-align: center; */
 
 
-/* .pluses-icon {
-  margin-right: auto;
-  margin-left: auto; */
-  /* text-align: center; */
+.pluses-icon {
+  margin-bottom: 55px;
+  /* margin-right: auto;
+  margin-left: auto;  */
+} 
 
 .container {
   width: 1200px; 
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 94px ;
+  /* margin-bottom: 94px ; */
   outline: 5px solid maroon;
   padding-left: 15px;
   padding-right: 15px; 
+  padding-bottom: 94px;
+}
+
+.header-container {
+  width: 1200px; 
+  margin-left: 15px;
+  margin-right: 15px;
+  /* margin-bottom: 94px ; */
+  outline: 5px solid maroon;
+  padding-left: 15px;
+  padding-right: 15px;  
 }
 
 .section-title {
@@ -260,6 +272,7 @@ text-align: left;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 /* <!-- Портфель продуктов --> */
