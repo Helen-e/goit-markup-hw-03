@@ -319,6 +319,11 @@ text-align: left;
  margin-bottom: 50px;  
  }
 
+ .team-block {
+background: F5F4FA;
+
+ }
+
  .team-list, .social-net {
    display: flex;
  }
@@ -377,11 +382,12 @@ margin-right: 30px;
 .footer {
   background-color: #2f303a;
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
   margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  align-items: baseline;
 }
 
 .address-info {
