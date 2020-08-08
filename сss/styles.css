@@ -41,7 +41,10 @@ body {
 .page-header {
   width: 1170px;
   height: 80px;
-  display: flex;
+  display: inline-block;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .box:last-child {
   margin-bottom: 0;
@@ -63,7 +66,7 @@ body {
 
 .navigation {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .address-item {
@@ -73,6 +76,9 @@ body {
   margin-right: 10px;
 }
 
+/* .address {
+margin-left: auto;
+} */
 .address-list li {
 display: inline;
 /* align-items: center; */
@@ -99,7 +105,7 @@ display: inline;
   /* margin-bottom: 94px; */
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: purple;
+  background-color: #2F303A;
   width: 1600px;
   text-align: center;
   margin: auto;
@@ -138,9 +144,10 @@ display: inline;
 
 .flexbox {
   display: flex;
-  justify-content: flex-end;
-  /* align-items: center;  */
-}
+  /* justify-content: flex-end; */
+  }
+
+
 .logo-blue {
   color: var(--accent-color);
 }
@@ -210,10 +217,11 @@ display: inline;
   overflow: hidden;
 }
 
-/* .pluses {
-  margin-bottom: 94px;
-} */
-  
+.pluses {
+padding-top: 94px;
+
+}
+
 .pluses-list{
   display: flex;
   /* background: green */
@@ -238,6 +246,15 @@ text-align: left;
   margin-left: auto;  */
 } 
 
+section {
+  outline: 5px solid purple;
+}
+
+.block {
+padding-bottom: 94px;
+
+
+}
 .container {
   width: 1200px; 
   margin-left: auto;
@@ -246,7 +263,7 @@ text-align: left;
   outline: 5px solid maroon;
   padding-left: 15px;
   padding-right: 15px; 
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 
 .header-container {
@@ -312,16 +329,12 @@ text-align: left;
    padding-top: 94px;
    justify-content: space-between;
    align-items: baseline;
-   background: F5F4FA;
+   background: #F5F4FA;
  }
 
  .team {
  margin-bottom: 50px;  
- }
-
- .team-block {
-background: F5F4FA;
-
+ background: #F5F4FA;
  }
 
  .team-list, .social-net {
@@ -330,8 +343,12 @@ background: F5F4FA;
 
 .team-member {
    margin-right: 30px;
+
   }
    
+  .team-member-info {
+    padding-bottom: 30px;
+  }
 
 .team-member-photo {
   margin-bottom: 30px;
@@ -346,8 +363,8 @@ background: F5F4FA;
   margin-bottom: 10px;
 }
 
-.social-net {
-  margin-bottom: 24px;
+/* .social-net {
+  margin-bottom: 24px; */
 }
 .job-title {
   font-size: 16px;
